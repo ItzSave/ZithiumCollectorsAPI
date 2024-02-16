@@ -1,4 +1,4 @@
-# XLTournaments API
+# ZithiumCollectorsAPI
 This repository provides a stripped version of [ZithiumCollectors]([https://www.spigotmc.org/resources/xltournaments.70630/](https://www.spigotmc.org/resources/zithiumcollectors.114135/)) for use of developers.
 
 ## Installation
