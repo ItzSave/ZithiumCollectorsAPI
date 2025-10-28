@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class CollectorSellAllEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private double totalWorth;
-    private int totalAmount;
+    private long totalAmount;
     private Player player;
 
     /**
@@ -22,7 +22,7 @@ public class CollectorSellAllEvent extends Event {
      * @param totalAmount the total amount of all items sold
      * @param player      the player who initiated the sell action
      */
-    public CollectorSellAllEvent(double totalWorth, int totalAmount, Player player) {
+    public CollectorSellAllEvent(double totalWorth, long totalAmount, Player player) {
         this.totalWorth = totalWorth;
         this.totalAmount = totalAmount;
         this.player = player;
@@ -42,7 +42,7 @@ public class CollectorSellAllEvent extends Event {
      *
      * @return the total amount of all items sold
      */
-    public int getTotalAmount() {
+    public long getTotalAmount() {
         return totalAmount;
     }
 

@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public class CollectorAutoSellEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private double totalWorth;
-    private int totalAmount;
+    private long totalAmount;
     private Player player;
 
     /**
@@ -21,7 +21,7 @@ public class CollectorAutoSellEvent extends Event {
      *
      * @since api version v1.0.0, plugin version v1.3.0
      */
-    public CollectorAutoSellEvent(double totalWorth, int totalAmount, Player player) {
+    public CollectorAutoSellEvent(double totalWorth, long totalAmount, Player player) {
         this.totalWorth = totalWorth;
         this.totalAmount = totalAmount;
         this.player = player;
@@ -41,7 +41,7 @@ public class CollectorAutoSellEvent extends Event {
      *
      * @return the total amount of all items sold
      */
-    public int getTotalAmount() {
+    public long getTotalAmount() {
         return totalAmount;
     }
 
